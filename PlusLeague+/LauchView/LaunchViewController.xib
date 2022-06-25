@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Silver.ttf">
+            <string>Silver</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchViewController" customModule="PlusLeague_" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingBackView" destination="SfJ-Ld-FsC" id="Gxp-L4-oHO"/>
+                <outlet property="loadingTextLabel" destination="dUx-ZL-CT2" id="5dA-Dz-A92"/>
+                <outlet property="loadingViewsStackView" destination="7be-GI-Cv9" id="Q6k-rE-vxn"/>
+                <outlet property="startBtn" destination="d58-np-vvZ" id="cQz-zF-Q1O"/>
+                <outlet property="statusBackView" destination="dTc-FE-0jD" id="Neh-Se-qwb"/>
+                <outlet property="view" destination="sTi-Jn-Hke" id="ASe-0m-IsR"/>
+                <outletCollection property="loadingViews" destination="IOC-b3-wiv" collectionClass="NSMutableArray" id="WG8-Zp-Ufr"/>
+                <outletCollection property="loadingViews" destination="iqv-q2-K4v" collectionClass="NSMutableArray" id="uhn-tP-DgX"/>
+                <outletCollection property="loadingViews" destination="7fW-q0-t1d" collectionClass="NSMutableArray" id="dSN-0C-tu7"/>
+                <outletCollection property="loadingViews" destination="3nl-Lc-qA9" collectionClass="NSMutableArray" id="Vy8-Bb-JXb"/>
+                <outletCollection property="loadingViews" destination="rNo-7h-K1r" collectionClass="NSMutableArray" id="LYa-jz-wWt"/>
+                <outletCollection property="loadingViews" destination="BsQ-uq-mej" collectionClass="NSMutableArray" id="Fld-p5-cU3"/>
+                <outletCollection property="loadingViews" destination="T0e-qr-HE9" collectionClass="NSMutableArray" id="Hoe-fz-RtW"/>
+                <outletCollection property="loadingViews" destination="uxX-GQ-Tnh" collectionClass="NSMutableArray" id="NBG-eg-wXD"/>
+                <outletCollection property="loadingViews" destination="uB2-rH-sAQ" collectionClass="NSMutableArray" id="Fba-Ue-ASC"/>
+                <outletCollection property="loadingViews" destination="MCo-9l-6cZ" collectionClass="NSMutableArray" id="oTQ-4R-npD"/>
+                <outletCollection property="loadingViews" destination="kcw-so-JCo" collectionClass="NSMutableArray" id="pci-Pk-TwL"/>
+                <outletCollection property="loadingViews" destination="R00-gY-Lqp" collectionClass="NSMutableArray" id="1Tf-rC-NzL"/>
+                <outletCollection property="loadingViews" destination="UAg-OS-LfA" collectionClass="NSMutableArray" id="rfG-Zh-aJA"/>
+                <outletCollection property="loadingViews" destination="b6T-Aa-roa" collectionClass="NSMutableArray" id="U5C-Ot-84T"/>
+                <outletCollection property="loadingViews" destination="OYF-MJ-r2I" collectionClass="NSMutableArray" id="GKS-6o-Tcu"/>
+                <outletCollection property="loadingViews" destination="2bg-XD-84S" collectionClass="NSMutableArray" id="Jxt-tA-iVD"/>
+                <outletCollection property="loadingViews" destination="Lka-5i-fvy" collectionClass="NSMutableArray" id="Icn-kO-UMg"/>
+                <outletCollection property="loadingViews" destination="HZo-3N-dJT" collectionClass="NSMutableArray" id="dza-eJ-qbP"/>
+                <outletCollection property="loadingViews" destination="wG5-sp-0Ka" collectionClass="NSMutableArray" id="od0-q4-X9f"/>
+                <outletCollection property="loadingViews" destination="IV4-23-ey8" collectionClass="NSMutableArray" id="Vpe-mq-tiX"/>
+                <outletCollection property="loadingViews" destination="ea8-At-JHS" collectionClass="NSMutableArray" id="HXy-gn-8te"/>
+                <outletCollection property="loadingViews" destination="WOe-tN-PdY" collectionClass="NSMutableArray" id="Usr-qV-2an"/>
+                <outletCollection property="loadingViews" destination="G89-Ua-gdP" collectionClass="NSMutableArray" id="19O-zX-JU2"/>
+                <outletCollection property="loadingViews" destination="wnV-B4-KFg" collectionClass="NSMutableArray" id="7yO-FU-LN3"/>
+                <outletCollection property="loadingViews" destination="Sg1-SB-ehC" collectionClass="NSMutableArray" id="LTa-Em-8t6"/>
+                <outletCollection property="loadingViews" destination="7nw-PX-S75" collectionClass="NSMutableArray" id="nSu-Cs-NLj"/>
+                <outletCollection property="loadingViews" destination="ECz-uB-w4r" collectionClass="NSMutableArray" id="2Gd-z4-enG"/>
+                <outletCollection property="loadingViews" destination="6fK-Y8-Q6E" collectionClass="NSMutableArray" id="Htp-mn-AZq"/>
+                <outletCollection property="loadingViews" destination="FaA-Ta-HTB" collectionClass="NSMutableArray" id="ZLI-Tb-mb7"/>
+                <outletCollection property="loadingViews" destination="saP-Vj-Bvc" collectionClass="NSMutableArray" id="3NG-ay-anw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sTi-Jn-Hke">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchViewBack" translatesAutoresizingMaskIntoConstraints="NO" id="zYa-Hp-Hvz">
+                    <rect key="frame" x="20" y="44" width="374" height="627"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigTilte" translatesAutoresizingMaskIntoConstraints="NO" id="eOF-Vv-tEg">
+                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eOF-Vv-tEg" secondAttribute="height" multiplier="207:25" id="vvq-mh-S6f"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTc-FE-0jD">
+                    <rect key="frame" x="0.0" y="671" width="414" height="133"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfJ-Ld-FsC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OOx-eL-SBy">
+                                    <rect key="frame" x="84.5" y="0.0" width="245" height="133"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now Loading......" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUx-ZL-CT2">
+                                            <rect key="frame" x="0.0" y="0.0" width="245" height="108"/>
+                                            <fontDescription key="fontDescription" name="Silver" family="Silver" pointSize="50"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="7be-GI-Cv9">
+                                            <rect key="frame" x="4" y="108" width="237" height="25"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOC-b3-wiv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="IOC-b3-wiv" secondAttribute="height" multiplier="1:5" id="BJh-KQ-J8G"/>
+                                                        <constraint firstAttribute="width" constant="5" id="BX0-S6-8py"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqv-q2-K4v">
+                                                    <rect key="frame" x="8" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fW-q0-t1d">
+                                                    <rect key="frame" x="16" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nl-Lc-qA9">
+                                                    <rect key="frame" x="24" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNo-7h-K1r">
+                                                    <rect key="frame" x="32" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BsQ-uq-mej">
+                                                    <rect key="frame" x="40" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0e-qr-HE9">
+                                                    <rect key="frame" x="48" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxX-GQ-Tnh">
+                                                    <rect key="frame" x="56" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uB2-rH-sAQ">
+                                                    <rect key="frame" x="64" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCo-9l-6cZ">
+                                                    <rect key="frame" x="72" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcw-so-JCo">
+                                                    <rect key="frame" x="80" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R00-gY-Lqp">
+                                                    <rect key="frame" x="88" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAg-OS-LfA">
+                                                    <rect key="frame" x="96" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="b6T-Aa-roa">
+                                                    <rect key="frame" x="104" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYF-MJ-r2I">
+                                                    <rect key="frame" x="112" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bg-XD-84S">
+                                                    <rect key="frame" x="120" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lka-5i-fvy">
+                                                    <rect key="frame" x="128" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZo-3N-dJT">
+                                                    <rect key="frame" x="136" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wG5-sp-0Ka">
+                                                    <rect key="frame" x="144" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IV4-23-ey8">
+                                                    <rect key="frame" x="152" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-At-JHS">
+                                                    <rect key="frame" x="160" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOe-tN-PdY">
+                                                    <rect key="frame" x="168" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G89-Ua-gdP">
+                                                    <rect key="frame" x="176" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnV-B4-KFg">
+                                                    <rect key="frame" x="184" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sg1-SB-ehC">
+                                                    <rect key="frame" x="192" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nw-PX-S75">
+                                                    <rect key="frame" x="200" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECz-uB-w4r">
+                                                    <rect key="frame" x="208" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fK-Y8-Q6E">
+                                                    <rect key="frame" x="216" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FaA-Ta-HTB">
+                                                    <rect key="frame" x="224" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saP-Vj-Bvc">
+                                                    <rect key="frame" x="232" y="0.0" width="5" height="25"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="OOx-eL-SBy" firstAttribute="centerX" secondItem="SfJ-Ld-FsC" secondAttribute="centerX" id="Gj5-Nx-q5K"/>
+                                <constraint firstAttribute="bottom" secondItem="OOx-eL-SBy" secondAttribute="bottom" id="IHj-Yi-Oqa"/>
+                                <constraint firstItem="OOx-eL-SBy" firstAttribute="top" secondItem="SfJ-Ld-FsC" secondAttribute="top" id="ale-pb-ges"/>
+                                <constraint firstItem="OOx-eL-SBy" firstAttribute="centerY" secondItem="SfJ-Ld-FsC" secondAttribute="centerY" id="mNM-i9-B2d"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="SfJ-Ld-FsC" firstAttribute="leading" secondItem="dTc-FE-0jD" secondAttribute="leading" id="0L7-MW-stJ"/>
+                        <constraint firstAttribute="trailing" secondItem="SfJ-Ld-FsC" secondAttribute="trailing" id="3G1-Yb-RSb"/>
+                        <constraint firstAttribute="bottom" secondItem="SfJ-Ld-FsC" secondAttribute="bottom" id="8tg-vm-DJH"/>
+                        <constraint firstItem="SfJ-Ld-FsC" firstAttribute="top" secondItem="dTc-FE-0jD" secondAttribute="top" id="kqr-uo-k44"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Bwa-Sj-dwX"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dTc-FE-0jD" firstAttribute="leading" secondItem="Bwa-Sj-dwX" secondAttribute="leading" id="0R4-ZF-t0x"/>
+                <constraint firstItem="dTc-FE-0jD" firstAttribute="top" secondItem="zYa-Hp-Hvz" secondAttribute="bottom" id="13A-HN-9JX"/>
+                <constraint firstItem="eOF-Vv-tEg" firstAttribute="leading" secondItem="Bwa-Sj-dwX" secondAttribute="leading" id="1YR-Sg-AEb"/>
+                <constraint firstItem="Bwa-Sj-dwX" firstAttribute="trailing" secondItem="zYa-Hp-Hvz" secondAttribute="trailing" constant="20" id="MGr-Rd-Iov"/>
+                <constraint firstItem="zYa-Hp-Hvz" firstAttribute="leading" secondItem="Bwa-Sj-dwX" secondAttribute="leading" constant="20" id="Rzz-sJ-4mV"/>
+                <constraint firstItem="eOF-Vv-tEg" firstAttribute="bottom" secondItem="Bwa-Sj-dwX" secondAttribute="bottom" id="T3T-NY-xTT"/>
+                <constraint firstItem="dTc-FE-0jD" firstAttribute="trailing" secondItem="Bwa-Sj-dwX" secondAttribute="trailing" id="TqF-w6-rC9"/>
+                <constraint firstItem="eOF-Vv-tEg" firstAttribute="top" secondItem="dTc-FE-0jD" secondAttribute="bottom" constant="8" symbolic="YES" id="ceC-WI-GeW"/>
+                <constraint firstItem="zYa-Hp-Hvz" firstAttribute="height" secondItem="sTi-Jn-Hke" secondAttribute="height" multiplier="0.7" id="dlW-2p-bbM"/>
+                <constraint firstItem="eOF-Vv-tEg" firstAttribute="trailing" secondItem="Bwa-Sj-dwX" secondAttribute="trailing" id="laH-uM-5hW"/>
+                <constraint firstItem="zYa-Hp-Hvz" firstAttribute="top" secondItem="Bwa-Sj-dwX" secondAttribute="top" id="y28-c5-xEy"/>
+            </constraints>
+            <point key="canvasLocation" x="986.95652173913049" y="79.6875"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="d58-np-vvZ">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+            <buttonConfiguration key="configuration" style="plain" title="PRESS START" titleAlignment="center">
+                <fontDescription key="titleFontDescription" name="Silver" family="Silver" pointSize="50"/>
+                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            </buttonConfiguration>
+            <connections>
+                <action selector="pressStart:" destination="-1" eventType="touchUpInside" id="4gb-gb-1c3"/>
+            </connections>
+            <point key="canvasLocation" x="1013" y="463"/>
+        </button>
+    </objects>
+    <resources>
+        <image name="BigTilte" width="200" height="50"/>
+        <image name="launchViewBack" width="2416" height="1205"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
