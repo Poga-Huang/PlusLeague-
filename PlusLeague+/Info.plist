@@ -5,7 +5,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Silver.ttf</string>
-		<string>General.ttf</string>
+		<string>GenSekiGothic-H.ttc</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

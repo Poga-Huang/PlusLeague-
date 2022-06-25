@@ -73,17 +73,17 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfJ-Ld-FsC">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="133"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OOx-eL-SBy">
-                                    <rect key="frame" x="84.5" y="0.0" width="245" height="133"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OOx-eL-SBy">
+                                    <rect key="frame" x="88.5" y="0.0" width="237" height="133"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now Loading......" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUx-ZL-CT2">
-                                            <rect key="frame" x="0.0" y="0.0" width="245" height="108"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="237" height="108"/>
                                             <fontDescription key="fontDescription" name="Silver" family="Silver" pointSize="50"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="7be-GI-Cv9">
-                                            <rect key="frame" x="4" y="108" width="237" height="25"/>
+                                            <rect key="frame" x="0.0" y="108" width="237" height="25"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOC-b3-wiv">
                                                     <rect key="frame" x="0.0" y="0.0" width="5" height="25"/>
@@ -260,7 +260,7 @@
             <connections>
                 <action selector="pressStart:" destination="-1" eventType="touchUpInside" id="4gb-gb-1c3"/>
             </connections>
-            <point key="canvasLocation" x="1013" y="463"/>
+            <point key="canvasLocation" x="986" y="451"/>
         </button>
     </objects>
     <resources>

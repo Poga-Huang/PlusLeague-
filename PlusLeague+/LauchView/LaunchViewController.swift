@@ -20,12 +20,12 @@ class LaunchViewController: UIViewController {
     
     
     //Variable
-    private var showingLoadingViews = [0,1,2,3,4]
+    private var showingLoadingViews = [0,1,2,3]
     private var timer:Timer?
     
     private var loadingTimes = 0{
         didSet{
-            if loadingTimes > 10{
+            if loadingTimes == 8{
                 //結束loading
                 timer?.invalidate()
                 loadingBackView.removeFromSuperview()
@@ -106,11 +106,12 @@ class LaunchViewController: UIViewController {
     }
     
     private func prepareHomePage(){
-        let homePageViewController = HomePageViewController(nibName:"\(HomePageViewController.self)", bundle: nil)
-        homePageViewController.modalTransitionStyle = .crossDissolve
-        homePageViewController.modalPresentationStyle = .fullScreen
+//        let homePageViewController = HomePageViewController(nibName:"\(HomePageViewController.self)", bundle: nil)
+//        homePageViewController.modalTransitionStyle = .coverVertical
+//        homePageViewController.modalPresentationStyle = .fullScreen
+        let webVc = WebViewController(url: URL(string: "https://pleagueofficial.com/")!)
         self.dismiss(animated: true) {
-            self.present(homePageViewController, animated: true)
+            self.present(webVc, animated: true)
         }
     }
     
