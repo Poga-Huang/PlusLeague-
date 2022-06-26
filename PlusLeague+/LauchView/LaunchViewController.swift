@@ -106,12 +106,11 @@ class LaunchViewController: UIViewController {
     }
     
     private func prepareHomePage(){
-//        let homePageViewController = HomePageViewController(nibName:"\(HomePageViewController.self)", bundle: nil)
-//        homePageViewController.modalTransitionStyle = .coverVertical
-//        homePageViewController.modalPresentationStyle = .fullScreen
-        let webVc = WebViewController(url: URL(string: "https://pleagueofficial.com/")!)
+        let homePageViewController = HomePageViewController(nibName:"\(HomePageViewController.self)", bundle: nil)
+        homePageViewController.modalTransitionStyle = .coverVertical
+        homePageViewController.modalPresentationStyle = .fullScreen
         self.dismiss(animated: true) {
-            self.present(webVc, animated: true)
+            self.present(homePageViewController, animated: true)
         }
     }
     

@@ -13,6 +13,18 @@
 		D640681F28674E8A00E41D49 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D640681D28674E8A00E41D49 /* WebViewController.xib */; };
 		D64068222867514700E41D49 /* GenSekiGothic-H.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D64068212867514600E41D49 /* GenSekiGothic-H.ttc */; };
 		D64068242867557800E41D49 /* Web+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64068232867557800E41D49 /* Web+Extension.swift */; };
+		D64068262868189F00E41D49 /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64068252868189F00E41D49 /* HomePageModel.swift */; };
+		D640682D2868194700E41D49 /* DownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D640682B2868194700E41D49 /* DownloadHelper.swift */; };
+		D640682E2868194700E41D49 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D640682C2868194700E41D49 /* Color.swift */; };
+		D64068312868199C00E41D49 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64068302868199C00E41D49 /* HomePageViewModel.swift */; };
+		D640683328681ACC00E41D49 /* HomeListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D640683228681ACC00E41D49 /* HomeListCellViewModel.swift */; };
+		D64068352868296000E41D49 /* HomePage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64068342868296000E41D49 /* HomePage+Extension.swift */; };
+		D640683828682A9B00E41D49 /* HomePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D640683628682A9B00E41D49 /* HomePageCell.swift */; };
+		D640683928682A9B00E41D49 /* HomePageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D640683728682A9B00E41D49 /* HomePageCell.xib */; };
+		D640683B28684CE000E41D49 /* enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D640683A28684CE000E41D49 /* enum.swift */; };
+		D64068422868658C00E41D49 /* CoverImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64068402868658C00E41D49 /* CoverImageCell.swift */; };
+		D64068432868658C00E41D49 /* CoverImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64068412868658C00E41D49 /* CoverImageCell.xib */; };
+		D6406845286865D800E41D49 /* CoverImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6406844286865D800E41D49 /* CoverImageViewModel.swift */; };
 		D6B8321A2865F0BD004545BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B832192865F0BD004545BF /* AppDelegate.swift */; };
 		D6B8321C2865F0BD004545BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B8321B2865F0BD004545BF /* SceneDelegate.swift */; };
 		D6B832212865F0BD004545BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B8321F2865F0BD004545BF /* Main.storyboard */; };
@@ -30,6 +42,18 @@
 		D640681D28674E8A00E41D49 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		D64068212867514600E41D49 /* GenSekiGothic-H.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GenSekiGothic-H.ttc"; sourceTree = "<group>"; };
 		D64068232867557800E41D49 /* Web+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Web+Extension.swift"; sourceTree = "<group>"; };
+		D64068252868189F00E41D49 /* HomePageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
+		D640682B2868194700E41D49 /* DownloadHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadHelper.swift; sourceTree = "<group>"; };
+		D640682C2868194700E41D49 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		D64068302868199C00E41D49 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		D640683228681ACC00E41D49 /* HomeListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListCellViewModel.swift; sourceTree = "<group>"; };
+		D64068342868296000E41D49 /* HomePage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomePage+Extension.swift"; sourceTree = "<group>"; };
+		D640683628682A9B00E41D49 /* HomePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCell.swift; sourceTree = "<group>"; };
+		D640683728682A9B00E41D49 /* HomePageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageCell.xib; sourceTree = "<group>"; };
+		D640683A28684CE000E41D49 /* enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enum.swift; sourceTree = "<group>"; };
+		D64068402868658C00E41D49 /* CoverImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoverImageCell.swift; path = "PlusLeague+/HomePage/View+Controller/CoverImageCell.swift"; sourceTree = SOURCE_ROOT; };
+		D64068412868658C00E41D49 /* CoverImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CoverImageCell.xib; path = "PlusLeague+/HomePage/View+Controller/CoverImageCell.xib"; sourceTree = SOURCE_ROOT; };
+		D6406844286865D800E41D49 /* CoverImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageViewModel.swift; sourceTree = "<group>"; };
 		D6B832162865F0BD004545BF /* PlusLeague+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlusLeague+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B832192865F0BD004545BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6B8321B2865F0BD004545BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +80,9 @@
 		D64068152867327200E41D49 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				D6406811286729B500E41D49 /* HomePageViewController.swift */,
-				D6406812286729B500E41D49 /* HomePageViewController.xib */,
+				D6406828286818BF00E41D49 /* Model */,
+				D6406827286818AF00E41D49 /* View+Controller */,
+				D640682F2868195A00E41D49 /* ViewModel */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -70,6 +95,48 @@
 				D640681D28674E8A00E41D49 /* WebViewController.xib */,
 			);
 			path = WebView;
+			sourceTree = "<group>";
+		};
+		D6406827286818AF00E41D49 /* View+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6406811286729B500E41D49 /* HomePageViewController.swift */,
+				D64068342868296000E41D49 /* HomePage+Extension.swift */,
+				D640683628682A9B00E41D49 /* HomePageCell.swift */,
+				D64068402868658C00E41D49 /* CoverImageCell.swift */,
+				D64068412868658C00E41D49 /* CoverImageCell.xib */,
+				D640683728682A9B00E41D49 /* HomePageCell.xib */,
+				D6406812286729B500E41D49 /* HomePageViewController.xib */,
+			);
+			path = "View+Controller";
+			sourceTree = "<group>";
+		};
+		D6406828286818BF00E41D49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D64068252868189F00E41D49 /* HomePageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D640682A2868194700E41D49 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D640682B2868194700E41D49 /* DownloadHelper.swift */,
+				D640682C2868194700E41D49 /* Color.swift */,
+				D640683A28684CE000E41D49 /* enum.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D640682F2868195A00E41D49 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D64068302868199C00E41D49 /* HomePageViewModel.swift */,
+				D6406844286865D800E41D49 /* CoverImageViewModel.swift */,
+				D640683228681ACC00E41D49 /* HomeListCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D6B8320D2865F0BD004545BF = {
@@ -96,6 +163,7 @@
 				D640682028674E9100E41D49 /* WebView */,
 				D64068152867327200E41D49 /* HomePage */,
 				D6B832312866C485004545BF /* LauchView */,
+				D640682A2868194700E41D49 /* Tool */,
 				D6B8321F2865F0BD004545BF /* Main.storyboard */,
 				D6B832222865F0BE004545BF /* Assets.xcassets */,
 				D6B832242865F0BE004545BF /* LaunchScreen.storyboard */,
@@ -173,10 +241,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D640683928682A9B00E41D49 /* HomePageCell.xib in Resources */,
 				D6B832262865F0BE004545BF /* LaunchScreen.storyboard in Resources */,
 				D6406814286729B500E41D49 /* HomePageViewController.xib in Resources */,
 				D6B832232865F0BE004545BF /* Assets.xcassets in Resources */,
 				D640681F28674E8A00E41D49 /* WebViewController.xib in Resources */,
+				D64068432868658C00E41D49 /* CoverImageCell.xib in Resources */,
 				D6B832332866CB16004545BF /* Silver.ttf in Resources */,
 				D64068222867514700E41D49 /* GenSekiGothic-H.ttc in Resources */,
 				D6B832212865F0BD004545BF /* Main.storyboard in Resources */,
@@ -193,10 +263,20 @@
 			files = (
 				D6406813286729B500E41D49 /* HomePageViewController.swift in Sources */,
 				D6B8321A2865F0BD004545BF /* AppDelegate.swift in Sources */,
+				D6406845286865D800E41D49 /* CoverImageViewModel.swift in Sources */,
+				D640683B28684CE000E41D49 /* enum.swift in Sources */,
 				D6B8321C2865F0BD004545BF /* SceneDelegate.swift in Sources */,
 				D640681E28674E8A00E41D49 /* WebViewController.swift in Sources */,
+				D64068312868199C00E41D49 /* HomePageViewModel.swift in Sources */,
+				D64068352868296000E41D49 /* HomePage+Extension.swift in Sources */,
+				D640683828682A9B00E41D49 /* HomePageCell.swift in Sources */,
 				D64068242867557800E41D49 /* Web+Extension.swift in Sources */,
+				D64068262868189F00E41D49 /* HomePageModel.swift in Sources */,
+				D64068422868658C00E41D49 /* CoverImageCell.swift in Sources */,
 				D6B8322F2865FF43004545BF /* LaunchViewController.swift in Sources */,
+				D640682D2868194700E41D49 /* DownloadHelper.swift in Sources */,
+				D640683328681ACC00E41D49 /* HomeListCellViewModel.swift in Sources */,
+				D640682E2868194700E41D49 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

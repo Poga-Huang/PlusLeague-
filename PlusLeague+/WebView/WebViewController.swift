@@ -67,6 +67,7 @@ class WebViewController: UIViewController{
     
     //MARK: Actions
     @IBAction func backToPrevious(_ sender: UIButton) {
+        self.dismiss(animated: true)
     }
     
     @IBAction func refresh(_ sender: UIButton) {
