@@ -36,10 +36,8 @@ extension HomePageViewController:UITableViewDataSource,UITableViewDelegate{
         }
         else{
             let viewModel = viewModel.listCellViewModels[indexPath.row]
-            let webVC = WebViewController(url: viewModel.itemURL)
-            webVC.modalPresentationStyle = .fullScreen
-            
-            self.present(webVC, animated: true)
+            let webVC = WebViewController(url: viewModel.itemURL, title: viewModel.itemName)
+            self.navigationController?.pushViewController(webVC, animated: true)
         }
     }
     
@@ -67,7 +65,7 @@ extension HomePageViewController:UICollectionViewDataSource,UICollectionViewDele
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        pageControl.currentPage = Int(scrollView.contentOffset.x / self.collectionViewBackView.bounds.width)
+        pageControl.currentPage = Int(scrollView.contentOffset.x / self.view.frame.width)
     }
 
 }

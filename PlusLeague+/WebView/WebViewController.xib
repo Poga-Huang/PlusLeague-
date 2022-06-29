@@ -6,18 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="GenSekiGothic-H.ttc">
-            <string>GenSekiGothicTW-H</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewController" customModule="PlusLeague_" customModuleProvider="target">
             <connections>
-                <outlet property="backBtn" destination="Pcg-25-Y3B" id="Cid-6N-7po"/>
                 <outlet property="loadingActivityView" destination="zoG-va-9g8" id="NYA-ue-HEM"/>
                 <outlet property="loadingView" destination="VBO-vc-b4C" id="79f-fK-YNX"/>
-                <outlet property="titleLabel" destination="H3C-Nn-nOa" id="qLQ-r6-PmR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="webView" destination="6Xg-N8-QCJ" id="gS5-Ti-m5E"/>
             </connections>
@@ -27,61 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhi-vZ-IFA">
-                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3C-Nn-nOa">
-                            <rect key="frame" x="83" y="0.0" width="248" height="44"/>
-                            <fontDescription key="fontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="20"/>
-                            <color key="textColor" red="0.71160948280000003" green="0.59842532869999998" blue="0.44702810050000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcg-25-Y3B">
-                            <rect key="frame" x="8" y="0.0" width="88" height="44"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="44" id="0uI-ID-lcK"/>
-                                <constraint firstAttribute="width" secondItem="Pcg-25-Y3B" secondAttribute="height" multiplier="2:1" id="BWO-mS-3YG"/>
-                            </constraints>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" imagePlacement="leading" title="back">
-                                <color key="baseForegroundColor" red="0.71160948280000003" green="0.59842532869999998" blue="0.44702810050000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </buttonConfiguration>
-                            <connections>
-                                <action selector="backToPrevious:" destination="-1" eventType="touchUpInside" id="jct-eu-uNo"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjl-17-cQP">
-                            <rect key="frame" x="362" y="0.0" width="44" height="44"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="44" id="LEq-Zh-avf"/>
-                            </constraints>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise" catalog="system">
-                                <color key="baseForegroundColor" red="0.71160948280000003" green="0.59842532869999998" blue="0.44702810050000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </buttonConfiguration>
-                            <connections>
-                                <action selector="refresh:" destination="-1" eventType="touchUpInside" id="zzL-aS-fKL"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="H3C-Nn-nOa" firstAttribute="centerY" secondItem="xhi-vZ-IFA" secondAttribute="centerY" id="F3T-Mo-MPE"/>
-                        <constraint firstAttribute="bottom" secondItem="H3C-Nn-nOa" secondAttribute="bottom" id="GrO-cF-3l2"/>
-                        <constraint firstAttribute="height" constant="44" id="QKD-yg-pRH"/>
-                        <constraint firstItem="Pcg-25-Y3B" firstAttribute="top" secondItem="xhi-vZ-IFA" secondAttribute="top" id="RmK-Nf-2bz"/>
-                        <constraint firstItem="bjl-17-cQP" firstAttribute="width" secondItem="bjl-17-cQP" secondAttribute="height" multiplier="1:1" id="cfb-IM-hVS"/>
-                        <constraint firstItem="H3C-Nn-nOa" firstAttribute="top" secondItem="xhi-vZ-IFA" secondAttribute="top" id="dI3-JA-o0A"/>
-                        <constraint firstAttribute="trailing" secondItem="bjl-17-cQP" secondAttribute="trailing" constant="8" id="ewW-mv-OtE"/>
-                        <constraint firstAttribute="bottom" secondItem="Pcg-25-Y3B" secondAttribute="bottom" id="fG7-bZ-dpL"/>
-                        <constraint firstItem="H3C-Nn-nOa" firstAttribute="centerX" secondItem="xhi-vZ-IFA" secondAttribute="centerX" id="fcL-60-bHw"/>
-                        <constraint firstAttribute="bottom" secondItem="bjl-17-cQP" secondAttribute="bottom" id="kTN-cq-x1Q"/>
-                        <constraint firstItem="bjl-17-cQP" firstAttribute="top" secondItem="xhi-vZ-IFA" secondAttribute="top" id="pbl-br-Dze"/>
-                        <constraint firstItem="Pcg-25-Y3B" firstAttribute="leading" secondItem="xhi-vZ-IFA" secondAttribute="leading" constant="8" id="zPp-eY-4qJ"/>
-                    </constraints>
-                </view>
                 <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Xg-N8-QCJ">
-                    <rect key="frame" x="0.0" y="88" width="414" height="724"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="768"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <wkWebViewConfiguration key="configuration">
                         <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -142,15 +82,11 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="6Xg-N8-QCJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4kc-nN-fid"/>
                 <constraint firstItem="VBO-vc-b4C" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="59Q-0z-vpx"/>
-                <constraint firstItem="xhi-vZ-IFA" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="CeR-qD-Acq"/>
-                <constraint firstItem="xhi-vZ-IFA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Eb3-4y-a2f"/>
                 <constraint firstItem="nho-PK-gJO" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="GBi-1X-ZX0"/>
-                <constraint firstItem="H3C-Nn-nOa" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="JGV-OC-YpD"/>
                 <constraint firstItem="nho-PK-gJO" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Oue-kb-qt6"/>
                 <constraint firstItem="6Xg-N8-QCJ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RXq-56-t2d"/>
-                <constraint firstItem="xhi-vZ-IFA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Swt-xv-XVu"/>
-                <constraint firstItem="6Xg-N8-QCJ" firstAttribute="top" secondItem="xhi-vZ-IFA" secondAttribute="bottom" id="aHo-jA-FqE"/>
                 <constraint firstItem="nho-PK-gJO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eJ9-re-aEL"/>
                 <constraint firstItem="6Xg-N8-QCJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h7n-3T-XhP"/>
                 <constraint firstItem="nho-PK-gJO" firstAttribute="top" secondItem="6Xg-N8-QCJ" secondAttribute="bottom" id="rap-uy-3RK"/>
@@ -161,8 +97,6 @@
     </objects>
     <resources>
         <image name="BigTilte" width="200" height="50"/>
-        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
-        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="smallLogo" width="60" height="60"/>
     </resources>
 </document>

@@ -107,10 +107,20 @@ class LaunchViewController: UIViewController {
     
     private func prepareHomePage(){
         let homePageViewController = HomePageViewController(nibName:"\(HomePageViewController.self)", bundle: nil)
-        homePageViewController.modalTransitionStyle = .coverVertical
-        homePageViewController.modalPresentationStyle = .fullScreen
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .black
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.getMainColor()]
+        
+        let mainNavigationController = UINavigationController(rootViewController: homePageViewController)
+        mainNavigationController.navigationBar.standardAppearance = appearance
+        mainNavigationController.navigationBar.tintColor = UIColor.getMainColor()
+        mainNavigationController.modalTransitionStyle = .crossDissolve
+        mainNavigationController.modalPresentationStyle = .fullScreen
+        
         self.dismiss(animated: true) {
-            self.present(homePageViewController, animated: true)
+            self.removeFromParent()
+            self.present(mainNavigationController, animated: true)
         }
     }
     

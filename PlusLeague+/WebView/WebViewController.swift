@@ -11,13 +11,12 @@ import WebKit
 class WebViewController: UIViewController{
     
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var loadingActivityView: UIActivityIndicatorView!
     
     var url:URL
+    var titleText:String
     internal var isLoading = true{
         didSet{
             loadingView.isHidden = !isLoading
@@ -29,11 +28,10 @@ class WebViewController: UIViewController{
             }
         }
     }
-    var titleText:String?
-    var backText:String?
     
-    init(url:URL){
+    init(url:URL,title:String){
         self.url = url
+        self.titleText = title
         super.init(nibName: "\(WebViewController.self)", bundle: nil)
     }
     
@@ -51,8 +49,10 @@ class WebViewController: UIViewController{
     
     //MARK: Private Method
     private func initViews(){
-        titleLabel.text = titleText
-        backBtn.titleLabel?.text = backText
+        
+        let refreshBtn = UIBarButtonItem(image: UIImage(systemName: "arrow.clockwise"), style: .plain, target: self, action: #selector(refresh))
+        self.navigationItem.rightBarButtonItem = refreshBtn
+        self.title = titleText
         webView.navigationDelegate = self
         
         loadingView.layer.cornerRadius = loadingView.bounds.width/4
@@ -65,12 +65,7 @@ class WebViewController: UIViewController{
         webView.load(request)
     }
     
-    //MARK: Actions
-    @IBAction func backToPrevious(_ sender: UIButton) {
-        self.dismiss(animated: true)
-    }
-    
-    @IBAction func refresh(_ sender: UIButton) {
+    @objc private func refresh() {
         isLoading = true
         webView.reload()
     }

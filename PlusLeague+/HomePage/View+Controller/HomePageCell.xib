@@ -22,28 +22,18 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="賽程" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdM-hs-NG1">
-                        <rect key="frame" x="36" y="0.0" width="284" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" red="0.71160948280000003" green="0.59842532869999998" blue="0.44702810050000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2am-eC-n9a">
-                        <rect key="frame" x="8" y="8" width="28" height="28"/>
-                        <color key="tintColor" red="0.91801935430000003" green="0.3398914039" blue="0.1579066217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="2am-eC-n9a" secondAttribute="height" multiplier="1:1" id="DQ1-vX-jRg"/>
-                        </constraints>
-                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="2am-eC-n9a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2UT-Ph-baH"/>
                     <constraint firstAttribute="trailing" secondItem="tdM-hs-NG1" secondAttribute="trailing" id="2da-mu-aJG"/>
-                    <constraint firstAttribute="bottom" secondItem="2am-eC-n9a" secondAttribute="bottom" constant="8" id="4gV-kH-lGk"/>
-                    <constraint firstItem="tdM-hs-NG1" firstAttribute="leading" secondItem="2am-eC-n9a" secondAttribute="trailing" id="WX2-hz-g0A"/>
-                    <constraint firstItem="2am-eC-n9a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="bK7-pg-tzY"/>
                     <constraint firstAttribute="bottom" secondItem="tdM-hs-NG1" secondAttribute="bottom" id="cqN-CE-rT5"/>
                     <constraint firstItem="tdM-hs-NG1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rFs-Lr-6eY"/>
+                    <constraint firstItem="tdM-hs-NG1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="smH-US-Q6U"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -54,7 +44,4 @@
             <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="smallLogo" width="60" height="60"/>
-    </resources>
 </document>
