@@ -33,6 +33,10 @@
 		D6B8322F2865FF43004545BF /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B8322D2865FF43004545BF /* LaunchViewController.swift */; };
 		D6B832302865FF43004545BF /* LaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B8322E2865FF43004545BF /* LaunchViewController.xib */; };
 		D6B832332866CB16004545BF /* Silver.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6B832322866CA38004545BF /* Silver.ttf */; };
+		D6DF69F3286DD048008476EF /* SeasonCoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF69F2286DD048008476EF /* SeasonCoverImageView.swift */; };
+		D6DF69F5286DD067008476EF /* SeasonCoverImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF69F4286DD067008476EF /* SeasonCoverImageViewModel.swift */; };
+		D6DF69F7286DD11B008476EF /* SupportImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF69F6286DD11B008476EF /* SupportImageView.swift */; };
+		D6DF69F9286DD131008476EF /* SupportImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF69F8286DD131008476EF /* SupportImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,10 @@
 		D6B8322D2865FF43004545BF /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		D6B8322E2865FF43004545BF /* LaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchViewController.xib; sourceTree = "<group>"; };
 		D6B832322866CA38004545BF /* Silver.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Silver.ttf; sourceTree = "<group>"; };
+		D6DF69F2286DD048008476EF /* SeasonCoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SeasonCoverImageView.swift; path = "PlusLeague+/HomePage/View+Controller/SeasonCoverImageView.swift"; sourceTree = SOURCE_ROOT; };
+		D6DF69F4286DD067008476EF /* SeasonCoverImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonCoverImageViewModel.swift; sourceTree = "<group>"; };
+		D6DF69F6286DD11B008476EF /* SupportImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SupportImageView.swift; path = "PlusLeague+/HomePage/View+Controller/SupportImageView.swift"; sourceTree = SOURCE_ROOT; };
+		D6DF69F8286DD131008476EF /* SupportImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,8 @@
 			children = (
 				D6406811286729B500E41D49 /* HomePageViewController.swift */,
 				D64068342868296000E41D49 /* HomePage+Extension.swift */,
+				D6DF69F2286DD048008476EF /* SeasonCoverImageView.swift */,
+				D6DF69F6286DD11B008476EF /* SupportImageView.swift */,
 				D640683628682A9B00E41D49 /* HomePageCell.swift */,
 				D64068402868658C00E41D49 /* CoverImageCell.swift */,
 				D64068412868658C00E41D49 /* CoverImageCell.xib */,
@@ -132,6 +142,8 @@
 		D640682F2868195A00E41D49 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D6DF69F4286DD067008476EF /* SeasonCoverImageViewModel.swift */,
+				D6DF69F8286DD131008476EF /* SupportImageViewModel.swift */,
 				D64068302868199C00E41D49 /* HomePageViewModel.swift */,
 				D6406844286865D800E41D49 /* CoverImageViewModel.swift */,
 				D640683228681ACC00E41D49 /* HomeListCellViewModel.swift */,
@@ -268,15 +280,19 @@
 				D6B8321C2865F0BD004545BF /* SceneDelegate.swift in Sources */,
 				D640681E28674E8A00E41D49 /* WebViewController.swift in Sources */,
 				D64068312868199C00E41D49 /* HomePageViewModel.swift in Sources */,
+				D6DF69F3286DD048008476EF /* SeasonCoverImageView.swift in Sources */,
 				D64068352868296000E41D49 /* HomePage+Extension.swift in Sources */,
 				D640683828682A9B00E41D49 /* HomePageCell.swift in Sources */,
 				D64068242867557800E41D49 /* Web+Extension.swift in Sources */,
 				D64068262868189F00E41D49 /* HomePageModel.swift in Sources */,
 				D64068422868658C00E41D49 /* CoverImageCell.swift in Sources */,
+				D6DF69F5286DD067008476EF /* SeasonCoverImageViewModel.swift in Sources */,
 				D6B8322F2865FF43004545BF /* LaunchViewController.swift in Sources */,
 				D640682D2868194700E41D49 /* DownloadHelper.swift in Sources */,
 				D640683328681ACC00E41D49 /* HomeListCellViewModel.swift in Sources */,
 				D640682E2868194700E41D49 /* Color.swift in Sources */,
+				D6DF69F9286DD131008476EF /* SupportImageViewModel.swift in Sources */,
+				D6DF69F7286DD11B008476EF /* SupportImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

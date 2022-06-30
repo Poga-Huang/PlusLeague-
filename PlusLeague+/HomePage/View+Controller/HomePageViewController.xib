@@ -4,12 +4,16 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomePageViewController" customModule="PlusLeague_" customModuleProvider="target">
             <connections>
-                <outlet property="collectionViewBackView" destination="cgz-IF-Tlp" id="l0o-5I-jQY"/>
+                <outlet property="bannerCollectionView" destination="88L-Mp-LfK" id="QGy-2A-yTG"/>
+                <outlet property="pageControlView" destination="jrk-wR-qhd" id="OR5-OC-Uvw"/>
+                <outlet property="seasonCoverImageView" destination="a1P-al-OtT" id="Chd-j3-gcm"/>
+                <outlet property="supportImageView" destination="Q3t-ie-gic" id="yg0-zA-TW0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,42 +22,59 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seasonTheme" translatesAutoresizingMaskIntoConstraints="NO" id="a1P-al-OtT">
-                    <rect key="frame" x="0.0" y="44" width="414" height="188"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a1P-al-OtT" customClass="SeasonCoverImageView" customModule="PlusLeague_" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="160"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="a1P-al-OtT" secondAttribute="height" multiplier="207:94" id="oIn-st-ZoN"/>
+                        <constraint firstAttribute="width" secondItem="a1P-al-OtT" secondAttribute="height" multiplier="207:80" id="vb7-LT-gkZ"/>
                     </constraints>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgz-IF-Tlp">
-                    <rect key="frame" x="0.0" y="232" width="414" height="414"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q3t-ie-gic" customClass="SupportImageView" customModule="PlusLeague_" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="662" width="414" height="200"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="88L-Mp-LfK">
+                    <rect key="frame" x="0.0" y="204" width="414" height="414"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="88L-Mp-LfK" secondAttribute="height" multiplier="1:1" id="ngd-dn-LNa"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PRz-fl-9bQ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrk-wR-qhd">
+                    <rect key="frame" x="0.0" y="618" width="414" height="44"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="cgz-IF-Tlp" secondAttribute="height" multiplier="1:1" id="ycx-16-RIr"/>
+                        <constraint firstAttribute="height" constant="44" id="bLF-P8-VDj"/>
                     </constraints>
                 </view>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="贊助" translatesAutoresizingMaskIntoConstraints="NO" id="Q3t-ie-gic">
-                    <rect key="frame" x="0.0" y="646" width="414" height="216"/>
-                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="Q3t-ie-gic" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="195-Yz-1jY"/>
-                <constraint firstItem="a1P-al-OtT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Kn-3d-Ypv"/>
-                <constraint firstItem="a1P-al-OtT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GWw-l1-S1m"/>
-                <constraint firstItem="Q3t-ie-gic" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="I6Y-DR-L4V"/>
-                <constraint firstItem="Q3t-ie-gic" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Kth-8m-lfQ"/>
-                <constraint firstItem="a1P-al-OtT" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="OLI-TZ-AK4"/>
-                <constraint firstItem="cgz-IF-Tlp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="iPx-6P-1pE"/>
-                <constraint firstItem="Q3t-ie-gic" firstAttribute="top" secondItem="cgz-IF-Tlp" secondAttribute="bottom" id="rbx-mI-6qd"/>
-                <constraint firstItem="cgz-IF-Tlp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sMC-qV-f9d"/>
-                <constraint firstItem="cgz-IF-Tlp" firstAttribute="top" secondItem="a1P-al-OtT" secondAttribute="bottom" id="t6a-YP-XjQ"/>
+                <constraint firstItem="88L-Mp-LfK" firstAttribute="top" secondItem="a1P-al-OtT" secondAttribute="bottom" id="BVs-QD-Skz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jrk-wR-qhd" secondAttribute="trailing" id="Cgs-7V-s3T"/>
+                <constraint firstItem="a1P-al-OtT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ux6-88-ZES"/>
+                <constraint firstItem="Q3t-ie-gic" firstAttribute="top" secondItem="jrk-wR-qhd" secondAttribute="bottom" id="X5f-Oc-ALX"/>
+                <constraint firstItem="jrk-wR-qhd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aJd-fx-IrX"/>
+                <constraint firstItem="88L-Mp-LfK" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="aT7-Wu-7wH"/>
+                <constraint firstItem="a1P-al-OtT" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dGM-mG-Nxj"/>
+                <constraint firstItem="Q3t-ie-gic" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fYK-yU-4Xn"/>
+                <constraint firstItem="88L-Mp-LfK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jdm-YW-NDo"/>
+                <constraint firstItem="jrk-wR-qhd" firstAttribute="top" secondItem="88L-Mp-LfK" secondAttribute="bottom" id="kLW-eZ-IIe"/>
+                <constraint firstItem="Q3t-ie-gic" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="m9K-oH-I7d"/>
+                <constraint firstItem="a1P-al-OtT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="muF-uJ-z7P"/>
+                <constraint firstItem="Q3t-ie-gic" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="zBR-S4-g4d"/>
             </constraints>
-            <point key="canvasLocation" x="160.86956521739131" y="162.72321428571428"/>
+            <point key="canvasLocation" x="118.84057971014494" y="67.633928571428569"/>
         </view>
     </objects>
     <resources>
-        <image name="seasonTheme" width="2794" height="1272"/>
-        <image name="贊助" width="828" height="190"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

@@ -11,6 +11,8 @@ class HomePageViewModel{
     
     public var listCellViewModels = [HomeListCellViewModel]()
     public var coverImageViewModels = [CoverImageViewModel]()
+    public var seasonCoverImageViewModel:SeasonCoverImageViewModel?
+    public var supportImageViewModel:SupportImageViewMdoel?
     
     public var url:String = ""{
         didSet{
@@ -42,6 +44,22 @@ class HomePageViewModel{
                 if let coverImages = record.fields.coverImage{
                     coverImages.forEach { coverImage in
                         coverImageViewModels.append(CoverImageViewModel(url: coverImage.url))
+                    }
+                }
+            }
+            //賽季主題
+            else if index == 1{
+                if let coverImages = record.fields.coverImage{
+                    coverImages.forEach { coverImage in
+                        seasonCoverImageViewModel = SeasonCoverImageViewModel(url: coverImage.url)
+                    }
+                }
+            }
+            //贊助商
+            else if index == 2{
+                if let coverImages = record.fields.coverImage{
+                    coverImages.forEach { coverImage in
+                        supportImageViewModel = SupportImageViewMdoel(url: coverImage.url)
                     }
                 }
             }

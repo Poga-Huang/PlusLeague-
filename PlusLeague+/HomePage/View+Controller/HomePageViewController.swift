@@ -9,13 +9,15 @@ import UIKit
 
 class HomePageViewController: UIViewController {
     
-    @IBOutlet weak var collectionViewBackView: UIView!
-    @IBOutlet weak var seasonCoverImageView: UIImageView!
+    @IBOutlet weak var seasonCoverImageView: SeasonCoverImageView!
+    @IBOutlet weak var supportImageView: SupportImageView!
+    @IBOutlet weak var bannerCollectionView: UICollectionView!
+    
+    @IBOutlet weak var pageControlView: UIView!
     
     internal let viewModel = HomePageViewModel()
     
     private let homePageListTVC = UITableViewController()
-    private var coverImageCollectionView:UICollectionView?
     internal var pageControl = UIPageControl()
     
     private var isShowing = false{
@@ -27,24 +29,29 @@ class HomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         initViews()
-        createCoverImageCollection()
+        createBannerCollection()
         
         viewModel.url = "https://api.airtable.com/v0/appgXA8nvPn4CjNbP/tblvxuXcUuNvoEhIc?sort[][field]=index"
         
         //Data Binding
         viewModel.onRequestEnd = {
             DispatchQueue.main.async {
+                self.seasonCoverImageView.setupImage(viewModel: self.viewModel.seasonCoverImageViewModel!)
+                self.supportImageView.setupImage(viewModel: self.viewModel.supportImageViewModel!)
                 self.homePageListTVC.tableView.reloadData()
-                self.coverImageCollectionView?.reloadData()
+                self.bannerCollectionView.reloadData()
                 self.addPageControl()
             }
         }
         
     }
     
+    
     //MARK: Private Method
     private func initViews(){
+        self.view.frame = UIScreen.main.bounds
         let bigTitle = UIImage(named: "BigTitle")
         let bigTitleView = UIImageView(image: bigTitle)
         bigTitleView.contentMode = .scaleAspectFit
@@ -81,43 +88,31 @@ class HomePageViewController: UIViewController {
         completion()
     }
     
-    private func createCoverImageCollection(){
+    private func createBannerCollection(){
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: self.view.frame.width, height: self.view.frame.width)
+        flowLayout.itemSize = CGSize(width:UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
         flowLayout.scrollDirection = .horizontal
         flowLayout.minimumLineSpacing = 0
         flowLayout.minimumInteritemSpacing = 0
         
-        coverImageCollectionView = UICollectionView(frame:CGRect(
-            x: 0,
-            y: 0,
-            width: collectionViewBackView.bounds.width,
-            height: collectionViewBackView.bounds.height),
-            collectionViewLayout: flowLayout)
-        coverImageCollectionView?.backgroundColor = .clear
-        coverImageCollectionView?.autoresizesSubviews = false
-        coverImageCollectionView?.bounces = false
-        coverImageCollectionView?.isPagingEnabled = true
-        coverImageCollectionView?.dataSource = self
-        coverImageCollectionView?.delegate = self
+        bannerCollectionView.collectionViewLayout = flowLayout
+        bannerCollectionView.backgroundColor = .clear
+        bannerCollectionView.autoresizesSubviews = false
+        bannerCollectionView.bounces = false
+        bannerCollectionView.isPagingEnabled = true
+        bannerCollectionView.dataSource = self
+        bannerCollectionView.delegate = self
         
         
-        coverImageCollectionView?.register(UINib(nibName: "\(CoverImageCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(CoverImageCell.self)")
+        bannerCollectionView.register(UINib(nibName: "\(CoverImageCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(CoverImageCell.self)")
         
-        if let coverImageCollectionView = coverImageCollectionView {
-            collectionViewBackView.addSubview(coverImageCollectionView)
-        }
     }
     
     private func addPageControl(){
-        pageControl.frame = CGRect(
-            x: 0,
-            y: collectionViewBackView.bounds.maxY - 44,
-            width:collectionViewBackView.bounds.width,
-            height: 44)
-        pageControl.numberOfPages = (coverImageCollectionView?.numberOfItems(inSection: 0))!
+        pageControl.frame = pageControlView.bounds
+        pageControl.numberOfPages = (bannerCollectionView.numberOfItems(inSection: 0))
         pageControl.isUserInteractionEnabled = false
-        collectionViewBackView.addSubview(pageControl)
+        pageControlView.addSubview(pageControl)
     }
     
     
