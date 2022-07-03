@@ -104,8 +104,8 @@
 		D6413A1528702BF5006BC310 /* TeamViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamViewController.xib; sourceTree = "<group>"; };
 		D6413A182870448E006BC310 /* TeamViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TeamViewController+Extension.swift"; sourceTree = "<group>"; };
 		D645DC4028717811003B0FE7 /* LineupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupViewModel.swift; sourceTree = "<group>"; };
-		D645DC42287178AD003B0FE7 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerCell.swift; path = "PlusLeague+/AllTeams/View+Controller/PlayerCell.swift"; sourceTree = SOURCE_ROOT; };
-		D645DC43287178AD003B0FE7 /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlayerCell.xib; path = "PlusLeague+/AllTeams/View+Controller/PlayerCell.xib"; sourceTree = SOURCE_ROOT; };
+		D645DC42287178AD003B0FE7 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerCell.swift; path = "PlusLeague+/AllTeams/View+Controller/lineupInfo/PlayerCell.swift"; sourceTree = SOURCE_ROOT; };
+		D645DC43287178AD003B0FE7 /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlayerCell.xib; path = "PlusLeague+/AllTeams/View+Controller/lineupInfo/PlayerCell.xib"; sourceTree = SOURCE_ROOT; };
 		D645DC4628717A77003B0FE7 /* PlayerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCellViewModel.swift; sourceTree = "<group>"; };
 		D645DC4828717BF2003B0FE7 /* LineupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupModel.swift; sourceTree = "<group>"; };
 		D6B832162865F0BD004545BF /* PlusLeague+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlusLeague+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +135,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D611F1AD28719E16003F74E9 /* ProfileInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D626286628707DD100199332 /* CityCell.swift */,
+				D626286A28707DE000199332 /* CoreCell.swift */,
+				D626286E28707DF000199332 /* StoryCell.swift */,
+				D626287228707DFD00199332 /* SloganCell.swift */,
+				D626287628707E0D00199332 /* CreateTimeCell.swift */,
+				D626287728707E0D00199332 /* CreateTimeCell.xib */,
+				D626287328707DFD00199332 /* SloganCell.xib */,
+				D626286F28707DF100199332 /* StoryCell.xib */,
+				D626286B28707DE000199332 /* CoreCell.xib */,
+				D626286728707DD100199332 /* CityCell.xib */,
+			);
+			path = ProfileInfo;
+			sourceTree = "<group>";
+		};
+		D611F1AE28719E38003F74E9 /* lineupInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D645DC42287178AD003B0FE7 /* PlayerCell.swift */,
+				D645DC43287178AD003B0FE7 /* PlayerCell.xib */,
+			);
+			path = lineupInfo;
+			sourceTree = "<group>";
+		};
+		D611F1AF28719E5C003F74E9 /* AllTeamsCell */ = {
+			isa = PBXGroup;
+			children = (
+				D6413A0E287019FC006BC310 /* TeamViewCell.swift */,
+				D6413A0F287019FC006BC310 /* TeamViewCell.xib */,
+			);
+			path = AllTeamsCell;
+			sourceTree = "<group>";
+		};
 		D64068152867327200E41D49 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,20 +250,9 @@
 			children = (
 				D6413A1B2870457F006BC310 /* TeamView */,
 				D6413A1A2870456B006BC310 /* AllTeamsPage */,
-				D6413A0E287019FC006BC310 /* TeamViewCell.swift */,
-				D626286628707DD100199332 /* CityCell.swift */,
-				D626286A28707DE000199332 /* CoreCell.swift */,
-				D626286E28707DF000199332 /* StoryCell.swift */,
-				D626287228707DFD00199332 /* SloganCell.swift */,
-				D626287628707E0D00199332 /* CreateTimeCell.swift */,
-				D645DC42287178AD003B0FE7 /* PlayerCell.swift */,
-				D645DC43287178AD003B0FE7 /* PlayerCell.xib */,
-				D6413A0F287019FC006BC310 /* TeamViewCell.xib */,
-				D626287728707E0D00199332 /* CreateTimeCell.xib */,
-				D626287328707DFD00199332 /* SloganCell.xib */,
-				D626286F28707DF100199332 /* StoryCell.xib */,
-				D626286B28707DE000199332 /* CoreCell.xib */,
-				D626286728707DD100199332 /* CityCell.xib */,
+				D611F1AE28719E38003F74E9 /* lineupInfo */,
+				D611F1AF28719E5C003F74E9 /* AllTeamsCell */,
+				D611F1AD28719E16003F74E9 /* ProfileInfo */,
 			);
 			path = "View+Controller";
 			sourceTree = "<group>";
