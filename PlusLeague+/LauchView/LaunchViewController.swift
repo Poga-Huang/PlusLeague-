@@ -114,6 +114,7 @@ class LaunchViewController: UIViewController {
         
         let mainNavigationController = UINavigationController(rootViewController: homePageViewController)
         mainNavigationController.navigationBar.standardAppearance = appearance
+        mainNavigationController.navigationBar.scrollEdgeAppearance = appearance
         mainNavigationController.navigationBar.tintColor = UIColor.getMainColor()
         mainNavigationController.modalTransitionStyle = .crossDissolve
         mainNavigationController.modalPresentationStyle = .fullScreen

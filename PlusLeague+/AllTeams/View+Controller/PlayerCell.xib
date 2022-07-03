@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GenSekiGothic-H.ttc">
+            <string>GenSekiGothicTW-H</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="playerCell" id="gTV-IL-0wX" customClass="PlayerCell" customModule="PlusLeague_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="356"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="288" height="356"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vma-Ks-TBr">
+                        <rect key="frame" x="84" y="20" width="120" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="CQc-zm-q60"/>
+                            <constraint firstAttribute="width" secondItem="Vma-Ks-TBr" secondAttribute="height" multiplier="4:5" id="bmf-sh-Xiz"/>
+                        </constraints>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRT-l9-ySJ">
+                        <rect key="frame" x="8" y="178" width="272" height="170"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rho-Lh-aO2">
+                                <rect key="frame" x="0.0" y="0.0" width="272" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWl-Gq-0WP">
+                                        <rect key="frame" x="119" y="0.0" width="34" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英文姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5D-Ce-br7">
+                                        <rect key="frame" x="116" y="28.5" width="40" height="28"/>
+                                        <fontDescription key="fontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGu-q7-RGV">
+                                        <rect key="frame" x="119" y="56.5" width="34" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身高/體重" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yt-nH-ejG">
+                                        <rect key="frame" x="103" y="85" width="66" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="背號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mST-j2-hdK">
+                                        <rect key="frame" x="121" y="113.5" width="30" height="28"/>
+                                        <fontDescription key="fontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemGray5Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="位置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIn-aV-5Ko">
+                                        <rect key="frame" x="121" y="141.5" width="30" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="15"/>
+                                        <color key="textColor" systemColor="systemGray5Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rho-Lh-aO2" firstAttribute="top" secondItem="YRT-l9-ySJ" secondAttribute="top" id="EKs-Ym-LaY"/>
+                            <constraint firstAttribute="bottom" secondItem="rho-Lh-aO2" secondAttribute="bottom" id="QOg-vv-wfo"/>
+                            <constraint firstItem="rho-Lh-aO2" firstAttribute="leading" secondItem="YRT-l9-ySJ" secondAttribute="leading" id="SN1-eb-bsV"/>
+                            <constraint firstAttribute="trailing" secondItem="rho-Lh-aO2" secondAttribute="trailing" id="bsR-H6-6aH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YRT-l9-ySJ" secondAttribute="bottom" constant="8" id="4bv-vZ-sRi"/>
+                <constraint firstItem="Vma-Ks-TBr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="7kf-8f-G87"/>
+                <constraint firstAttribute="trailing" secondItem="YRT-l9-ySJ" secondAttribute="trailing" constant="8" id="O0p-Wq-Sve"/>
+                <constraint firstItem="YRT-l9-ySJ" firstAttribute="top" secondItem="Vma-Ks-TBr" secondAttribute="bottom" constant="8" symbolic="YES" id="g1a-tm-e3C"/>
+                <constraint firstItem="Vma-Ks-TBr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="tUy-ef-Hdw"/>
+                <constraint firstItem="YRT-l9-ySJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="xrS-os-UXn"/>
+            </constraints>
+            <size key="customSize" width="288" height="356"/>
+            <connections>
+                <outlet property="backNumberLabel" destination="mST-j2-hdK" id="7kd-sp-jfR"/>
+                <outlet property="birthdayLabel" destination="TGu-q7-RGV" id="VFK-JZ-fbN"/>
+                <outlet property="colorView" destination="YRT-l9-ySJ" id="rxv-vk-TBb"/>
+                <outlet property="englishNameLabel" destination="Q5D-Ce-br7" id="XVY-Dw-Tjt"/>
+                <outlet property="heightWeightLabel" destination="0Yt-nH-ejG" id="j2z-wS-JQd"/>
+                <outlet property="nameLabel" destination="tWl-Gq-0WP" id="Gx9-WR-U6M"/>
+                <outlet property="playerImageView" destination="Vma-Ks-TBr" id="g9E-0k-toa"/>
+                <outlet property="positionLabel" destination="tIn-aV-5Ko" id="rHB-qb-sGk"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="122.54464285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

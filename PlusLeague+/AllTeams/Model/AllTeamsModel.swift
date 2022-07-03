@@ -2,7 +2,7 @@
 //  AllTeamsModel.swift
 //  PlusLeague+
 //
-//  Created by 黃柏嘉 on 2022/6/18.
+//  Created by 黃柏嘉 on 2022/7/1.
 //
 
 import Foundation
@@ -12,23 +12,25 @@ struct AllTeamsModel:Decodable{
     struct Records:Decodable{
         var fields:Fields
         struct Fields:Decodable{
-            var Name:String
-            var Location:String
-            var EnglishName:String
-            var HomeCourt:String
-            var TicketLink:URL
-            var TeamColor:String
-            var HomeCourtAddress:String
-            var Core:String
-            var Story:String
-            var SloganImage:[SloganImage]
+            var name:String
+            var location:String
+            var englishName:String
+            var homeCourt:String
+            var ticketLink:URL
+            var homeCourtAddress:String
+            var core:String
+            var sloganImage:[SloganImage]
             struct SloganImage:Decodable{
                 var url:URL
             }
-            var HomeCourtLat:Double
-            var HomeCourtLong:Double
-            var CreateTime:String
-            var TeamListID:String
+            var homeCourtLat:Double
+            var homeCourtLong:Double
+            var story:String
+            var createTime:String
+            var teamStat:URL
+            var teamRecord:URL
+            var teamColor:String
+            var playerListID:String
         }
     }
     //Get JSON Data
@@ -42,4 +44,5 @@ struct AllTeamsModel:Decodable{
             return nil
         }
     }
+    
 }

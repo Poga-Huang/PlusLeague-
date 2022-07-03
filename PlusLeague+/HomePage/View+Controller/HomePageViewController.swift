@@ -51,7 +51,6 @@ class HomePageViewController: UIViewController {
     
     //MARK: Private Method
     private func initViews(){
-        self.view.frame = UIScreen.main.bounds
         let bigTitle = UIImage(named: "BigTitle")
         let bigTitleView = UIImageView(image: bigTitle)
         bigTitleView.contentMode = .scaleAspectFit

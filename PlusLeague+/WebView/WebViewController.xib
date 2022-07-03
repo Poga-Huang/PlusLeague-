@@ -28,7 +28,7 @@
                         <wkPreferences key="preferences"/>
                     </wkWebViewConfiguration>
                 </wkWebView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigTilte" translatesAutoresizingMaskIntoConstraints="NO" id="nho-PK-gJO">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigTitle" translatesAutoresizingMaskIntoConstraints="NO" id="nho-PK-gJO">
                     <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="nho-PK-gJO" secondAttribute="height" multiplier="207:25" id="S0k-bW-dRp"/>
@@ -96,7 +96,7 @@
         </view>
     </objects>
     <resources>
-        <image name="BigTilte" width="200" height="50"/>
+        <image name="BigTitle" width="200" height="50"/>
         <image name="smallLogo" width="60" height="60"/>
     </resources>
 </document>

@@ -32,7 +32,9 @@ extension HomePageViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.row == 0{
-            //AllTeams
+            let allTeamsPage = AllTeamsViewController(nibName: "\(AllTeamsViewController.self)", bundle: nil)
+            
+            self.navigationController?.pushViewController(allTeamsPage, animated: true)
         }
         else{
             let viewModel = viewModel.listCellViewModels[indexPath.row]

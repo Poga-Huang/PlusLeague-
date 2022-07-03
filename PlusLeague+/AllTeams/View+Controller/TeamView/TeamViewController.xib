@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GenSekiGothic-H.ttc">
+            <string>GenSekiGothicTW-H</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TeamViewController" customModule="PlusLeague_" customModuleProvider="target">
+            <connections>
+                <outlet property="courtAddressLabel" destination="YQP-o6-yAJ" id="2XT-4D-10u"/>
+                <outlet property="courtInfoView" destination="iqs-7q-yHX" id="hcz-4U-11L"/>
+                <outlet property="courtMapView" destination="EJR-Rz-McJ" id="YuW-g4-Xz8"/>
+                <outlet property="courtNameLabel" destination="7L7-wd-how" id="oto-Kf-u6p"/>
+                <outlet property="lineupCollectionView" destination="pWI-qq-z3x" id="G8r-Lp-o4T"/>
+                <outlet property="profileTableView" destination="mUX-3c-FAM" id="1xC-q9-LeW"/>
+                <outlet property="switchSegmentedControl" destination="RXJ-aT-2IB" id="HT2-Zb-xVD"/>
+                <outlet property="teamColorView" destination="zyX-Hr-AzJ" id="SPR-Ex-05K"/>
+                <outlet property="teamEnNameLabel" destination="TYk-sp-nIu" id="LHw-3G-D1s"/>
+                <outlet property="teamInfoView" destination="TNZ-Ul-1xk" id="7hx-Vu-wyE"/>
+                <outlet property="teamLogoImageView" destination="onv-kR-ePQ" id="z5u-ek-htB"/>
+                <outlet property="teamNameLabel" destination="hWw-zo-Enr" id="kbK-fH-ceN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="linkBtns" destination="NXu-P6-UFX" collectionClass="NSMutableArray" id="ROn-Gq-1NH"/>
+                <outletCollection property="linkBtns" destination="wII-C3-sm0" collectionClass="NSMutableArray" id="P7Q-2Q-V0B"/>
+                <outletCollection property="linkBtns" destination="Oem-sz-B5m" collectionClass="NSMutableArray" id="Odc-74-jYW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbd-aJ-4Ci">
+                    <rect key="frame" x="0.0" y="44" width="414" height="269"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyX-Hr-AzJ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="134.5"/>
+                            <color key="backgroundColor" red="0.28159239889999998" green="0.54810154440000003" blue="0.76081234220000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="台北富邦勇士" translatesAutoresizingMaskIntoConstraints="NO" id="onv-kR-ePQ">
+                            <rect key="frame" x="167" y="94.5" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="onv-kR-ePQ" secondAttribute="height" multiplier="1:1" id="N2v-ZP-fbI"/>
+                                <constraint firstAttribute="width" constant="80" id="gNW-iE-ZVS"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gBN-xY-Znq">
+                            <rect key="frame" x="0.0" y="174.5" width="414" height="94.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="hWw-zo-Enr">
+                                    <rect key="frame" x="179" y="0.0" width="56" height="31.5"/>
+                                    <fontDescription key="fontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="TYk-sp-nIu">
+                                    <rect key="frame" x="186" y="31.5" width="42" height="31.5"/>
+                                    <fontDescription key="fontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-7V-Zi4">
+                                    <rect key="frame" x="41" y="63" width="332.5" height="31.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXu-P6-UFX">
+                                            <rect key="frame" x="0.0" y="0.0" width="105.5" height="31.5"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="售票連結">
+                                                <imageReference key="image" image="arrow.forward.circle" catalog="system" symbolScale="small"/>
+                                                <fontDescription key="titleFontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="17"/>
+                                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="goToTicketLink:" destination="-1" eventType="touchUpInside" id="V7h-K9-jAW"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wII-C3-sm0">
+                                            <rect key="frame" x="113.5" y="0.0" width="105.5" height="31.5"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="球隊數據">
+                                                <imageReference key="image" image="arrow.forward.circle" catalog="system" symbolScale="small"/>
+                                                <fontDescription key="titleFontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="17"/>
+                                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="goToTeamStatLink:" destination="-1" eventType="touchUpInside" id="3XV-2g-XOA"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oem-sz-B5m">
+                                            <rect key="frame" x="227" y="0.0" width="105.5" height="31.5"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="球隊紀錄">
+                                                <imageReference key="image" image="arrow.forward.circle" catalog="system" symbolScale="small"/>
+                                                <fontDescription key="titleFontDescription" name="GenSekiGothicTW-H" family="GenSekiGothic TW" pointSize="17"/>
+                                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="goToTeamRecordLink:" destination="-1" eventType="touchUpInside" id="agq-Jz-vKP"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zyX-Hr-AzJ" secondAttribute="trailing" id="05p-kr-znD"/>
+                        <constraint firstItem="gBN-xY-Znq" firstAttribute="top" secondItem="onv-kR-ePQ" secondAttribute="bottom" id="2EE-uk-OdE"/>
+                        <constraint firstAttribute="bottom" secondItem="gBN-xY-Znq" secondAttribute="bottom" id="5O9-uE-PLg"/>
+                        <constraint firstItem="zyX-Hr-AzJ" firstAttribute="leading" secondItem="Kbd-aJ-4Ci" secondAttribute="leading" id="AeU-wi-KmF"/>
+                        <constraint firstItem="onv-kR-ePQ" firstAttribute="centerX" secondItem="Kbd-aJ-4Ci" secondAttribute="centerX" id="CEe-Mz-jJo"/>
+                        <constraint firstAttribute="trailing" secondItem="gBN-xY-Znq" secondAttribute="trailing" id="GFt-36-QeP"/>
+                        <constraint firstItem="gBN-xY-Znq" firstAttribute="leading" secondItem="Kbd-aJ-4Ci" secondAttribute="leading" id="I0o-7E-Q0X"/>
+                        <constraint firstItem="zyX-Hr-AzJ" firstAttribute="height" secondItem="Kbd-aJ-4Ci" secondAttribute="height" multiplier="0.5" id="Ssc-yT-dKQ"/>
+                        <constraint firstItem="onv-kR-ePQ" firstAttribute="centerY" secondItem="Kbd-aJ-4Ci" secondAttribute="centerY" id="Y7B-Bg-FPz"/>
+                        <constraint firstItem="zyX-Hr-AzJ" firstAttribute="top" secondItem="Kbd-aJ-4Ci" secondAttribute="top" id="xgZ-bT-LtK"/>
+                    </constraints>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RXJ-aT-2IB">
+                    <rect key="frame" x="20" y="333" width="374" height="32"/>
+                    <segments>
+                        <segment title="簡介"/>
+                        <segment title="主場位置"/>
+                        <segment title="球隊陣容"/>
+                    </segments>
+                    <connections>
+                        <action selector="swtichTeamInfoView:" destination="-1" eventType="valueChanged" id="yBX-er-VRz"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNZ-Ul-1xk">
+                    <rect key="frame" x="0.0" y="372" width="414" height="490"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mUX-3c-FAM">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="490"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pWI-qq-z3x">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="490"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bta-Hr-baO">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqs-7q-yHX">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="490"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="7L7-wd-how">
+                                    <rect key="frame" x="8" y="0.0" width="398" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="a7d-7q-Aki"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="場館地址：" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="YQP-o6-yAJ">
+                                    <rect key="frame" x="8" y="44" width="398" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="mrH-HN-l7C"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EJR-Rz-McJ">
+                                    <rect key="frame" x="8" y="88" width="398" height="394"/>
+                                </mapView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="EJR-Rz-McJ" firstAttribute="leading" secondItem="iqs-7q-yHX" secondAttribute="leading" constant="8" id="7ff-WI-yif"/>
+                                <constraint firstItem="YQP-o6-yAJ" firstAttribute="leading" secondItem="iqs-7q-yHX" secondAttribute="leading" constant="8" id="9B4-uy-9gN"/>
+                                <constraint firstItem="7L7-wd-how" firstAttribute="leading" secondItem="iqs-7q-yHX" secondAttribute="leading" constant="8" id="K6P-TW-cPP"/>
+                                <constraint firstAttribute="trailing" secondItem="EJR-Rz-McJ" secondAttribute="trailing" constant="8" id="LXJ-zl-9QQ"/>
+                                <constraint firstItem="EJR-Rz-McJ" firstAttribute="top" secondItem="YQP-o6-yAJ" secondAttribute="bottom" id="NM1-Gk-Vh1"/>
+                                <constraint firstItem="YQP-o6-yAJ" firstAttribute="top" secondItem="7L7-wd-how" secondAttribute="bottom" id="Sfu-1t-svI"/>
+                                <constraint firstItem="7L7-wd-how" firstAttribute="top" secondItem="iqs-7q-yHX" secondAttribute="top" id="VQH-aO-n3S"/>
+                                <constraint firstAttribute="trailing" secondItem="YQP-o6-yAJ" secondAttribute="trailing" constant="8" id="mmH-hT-RPZ"/>
+                                <constraint firstAttribute="bottom" secondItem="EJR-Rz-McJ" secondAttribute="bottom" constant="8" id="rKa-Ep-IL5"/>
+                                <constraint firstAttribute="trailing" secondItem="7L7-wd-how" secondAttribute="trailing" constant="8" id="t0l-0j-ypw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="pWI-qq-z3x" secondAttribute="bottom" id="0op-D8-4Jz"/>
+                        <constraint firstAttribute="trailing" secondItem="iqs-7q-yHX" secondAttribute="trailing" id="35o-7D-Izn"/>
+                        <constraint firstAttribute="bottom" secondItem="iqs-7q-yHX" secondAttribute="bottom" id="A1H-cV-kxL"/>
+                        <constraint firstItem="pWI-qq-z3x" firstAttribute="top" secondItem="TNZ-Ul-1xk" secondAttribute="top" id="AeJ-Yi-jvy"/>
+                        <constraint firstAttribute="trailing" secondItem="mUX-3c-FAM" secondAttribute="trailing" id="Kbc-EB-LU6"/>
+                        <constraint firstAttribute="trailing" secondItem="pWI-qq-z3x" secondAttribute="trailing" id="N0z-KH-kSo"/>
+                        <constraint firstItem="iqs-7q-yHX" firstAttribute="top" secondItem="TNZ-Ul-1xk" secondAttribute="top" id="XcK-Bl-2cX"/>
+                        <constraint firstItem="mUX-3c-FAM" firstAttribute="leading" secondItem="TNZ-Ul-1xk" secondAttribute="leading" id="e9R-1q-00N"/>
+                        <constraint firstAttribute="bottom" secondItem="mUX-3c-FAM" secondAttribute="bottom" id="fR4-sO-ElF"/>
+                        <constraint firstItem="mUX-3c-FAM" firstAttribute="top" secondItem="TNZ-Ul-1xk" secondAttribute="top" id="ov2-Qr-gHj"/>
+                        <constraint firstItem="iqs-7q-yHX" firstAttribute="leading" secondItem="TNZ-Ul-1xk" secondAttribute="leading" id="ri2-Zc-27t"/>
+                        <constraint firstItem="pWI-qq-z3x" firstAttribute="leading" secondItem="TNZ-Ul-1xk" secondAttribute="leading" id="xhX-vE-nLh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Kbd-aJ-4Ci" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ahx-3z-OYa"/>
+                <constraint firstItem="RXJ-aT-2IB" firstAttribute="top" secondItem="Kbd-aJ-4Ci" secondAttribute="bottom" constant="20" id="FVL-JY-8Q2"/>
+                <constraint firstItem="TNZ-Ul-1xk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HvR-hk-8gO"/>
+                <constraint firstItem="RXJ-aT-2IB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="TKb-Ae-5qB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RXJ-aT-2IB" secondAttribute="trailing" constant="20" id="Ug7-M5-1sc"/>
+                <constraint firstItem="TNZ-Ul-1xk" firstAttribute="top" secondItem="RXJ-aT-2IB" secondAttribute="bottom" constant="8" symbolic="YES" id="ZSC-yS-AsR"/>
+                <constraint firstItem="TNZ-Ul-1xk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="iz6-8O-ORx"/>
+                <constraint firstItem="TNZ-Ul-1xk" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="kXq-LM-YnR"/>
+                <constraint firstItem="Kbd-aJ-4Ci" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="m7l-Rc-9d7"/>
+                <constraint firstItem="Kbd-aJ-4Ci" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sER-tT-WUL"/>
+                <constraint firstItem="Kbd-aJ-4Ci" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="umP-q7-7qP"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="53.571428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.forward.circle" catalog="system" width="128" height="121"/>
+        <image name="台北富邦勇士" width="279" height="264"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
